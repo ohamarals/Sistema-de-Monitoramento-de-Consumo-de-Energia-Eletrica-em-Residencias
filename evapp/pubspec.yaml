@@ -1,0 +1,60 @@
+# Nome do aplicativo
+name: enervision_app
+
+# Descrição do aplicativo
+description: >
+  Enervision é um aplicativo simulado desenvolvido por Guilherme Henrique Amaral Cevada
+  para o desenvolvimento completo da versão real com valores reais. Neste caso, todos os valores são simulados.
+  Este aplicativo foi criado para fins acadêmicos, como parte de um trabalho de conclusão de curso técnico em Eletrotécnica
+  na ETEC de Ilha Solteira.
+
+# Versão do aplicativo
+version: 1.0.0+1
+
+# Configura a versão do SDK do Dart que o aplicativo usa
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+# Lista de dependências do aplicativo
+dependencies:
+  flutter:
+    sdk: flutter
+  shared_preferences: ^2.0.6 # Biblioteca para armazenar dados localmente
+  mqtt_client: ^9.8.1 # Cliente MQTT para comunicação com brokers MQTT
+  provider: ^6.0.2 # Biblioteca para gerenciamento de estado
+  cupertino_icons: ^1.0.2 # Ícones no estilo Cupertino
+  intl: ^0.18.1 # Biblioteca para internacionalização e formatação de dados
+  syncfusion_flutter_charts: 25.2.7 # Biblioteca para criar gráficos
+  flutter_local_notifications: ^9.3.0 # Biblioteca para mostrar notificações locais
+  syncfusion_flutter_gauges: ^25.2.5 # Biblioteca para criar medidores (gauges)
+
+# Lista de dependências de desenvolvimento do aplicativo
+dev_dependencies:
+  flutter_test:
+    sdk: flutter # Biblioteca para escrever testes para o aplicativo Flutter
+  flutter_lints: ^2.0.1 # Conjunto de regras de lint para o Flutter
+
+# Configurações específicas do Flutter
+flutter:
+  uses-material-design: true # Indica que o aplicativo usa o design de material
+
+  # Lista de ativos do aplicativo
+  assets:
+    - assets/fonts/Roboto-Regular.ttf
+    - assets/fonts/Roboto-Medium.ttf
+    - assets/fonts/Roboto-Bold.ttf
+
+  # Lista de fontes personalizadas usadas no aplicativo
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/Roboto-Regular.ttf
+        - asset: assets/fonts/Roboto-Medium.ttf
+        - asset: assets/fonts/Roboto-Bold.ttf
+
+# ======================
+# Desenvolvido por:
+# Guilherme Henrique Amaral Cevada
+# Trabalho de Conclusão de Curso Técnico em Eletrotécnica
+# ETEC de Ilha Solteira
+# ======================
