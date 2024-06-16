@@ -63,12 +63,6 @@ Arquivo de configuração do Flutter, listando as dependências necessárias e o
    ```bash
    flutter run
    ```
-
-## Agradecimentos
-
-Este projeto foi desenvolvido como parte do Trabalho de Conclusão de Curso de Eletrotécnica na **ETEC de Ilha Solteira**.  
-Agradecimentos especiais ao professor **Evandro da Cunha** e ao professor **Alessandro** pela orientação e suporte técnico.
-
 ---
 
 **Guilherme Henrique Amaral Cevada**  
