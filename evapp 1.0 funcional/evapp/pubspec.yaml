@@ -1,0 +1,48 @@
+name: enervision_app
+description: >
+  Enervision é um aplicativo desenvolvido por Guilherme Henrique Amaral Cevada,
+  visando um projeto de TCC de Eletrotécnico. O aplicativo monitora e gerencia o consumo de energia elétrica,
+  garantindo a recepção dos valores de corrente e tensão através do ESP32, do SCT (sensor de corrente) e do ZMPT101B (sensor de tensão),
+  e realiza o cálculo da potência em tempo real.
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"  # Define a versão do SDK do Dart necessária para este projeto
+
+dependencies:
+  flutter:  # Dependência principal do Flutter
+    sdk: flutter  # Especifica que a SDK usada é a do Flutter
+  shared_preferences: ^2.2.3  # Para armazenar dados localmente no dispositivo
+  mqtt_client: ^9.6.1  # Cliente MQTT para comunicação com o broker MQTT
+  provider: ^6.1.2  # Gerenciamento de estado usando o pacote Provider
+  cupertino_icons: ^1.0.8  # Ícones da biblioteca Cupertino para iOS
+  intl: ^0.19.0  # Biblioteca para internacionalização e formatação de datas/números
+  syncfusion_flutter_charts: 25.2.7  # Biblioteca para criação de gráficos
+
+dev_dependencies:
+  flutter_test:  # Dependência para testes unitários
+    sdk: flutter  # Especifica que a SDK usada é a do Flutter
+  flutter_lints: ^2.0.1  # Conjunto de regras de lint para o Flutter
+
+flutter:
+  uses-material-design: true  # Ativa o uso do Material Design no aplicativo
+
+  assets:  # Especifica os recursos usados no aplicativo, como fontes
+    - assets/fonts/Roboto-Regular.ttf
+    - assets/fonts/Roboto-Medium.ttf
+    - assets/fonts/Roboto-Bold.ttf
+
+  fonts:  # Define a família de fontes usada no aplicativo
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/Roboto-Regular.ttf
+        - asset: assets/fonts/Roboto-Medium.ttf
+        - asset: assets/fonts/Roboto-Bold.ttf
+
+# ======================
+# Desenvolvido por:
+# Guilherme Henrique Amaral Cevada
+# Trabalho de Conclusão de Curso Técnico em Eletrotécnica
+# ETEC de Ilha Solteira
+# ======================
